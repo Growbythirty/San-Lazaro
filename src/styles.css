@@ -1053,9 +1053,11 @@ a { text-decoration: none; color: inherit; }
 .contacto { background: var(--cream); }
 .contacto__inner {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr;
   gap: 80px;
   align-items: start;
+  max-width: 720px;
+  margin-inline: auto;
 }
 .contacto__tag {
   font-family: var(--ff-display);
@@ -1097,32 +1099,6 @@ a { text-decoration: none; color: inherit; }
   font-size: .95rem;
   color: var(--neutral);
 }
-.form-group { margin-bottom: 20px; }
-.form-label {
-  display: block;
-  font-family: var(--ff-display);
-  font-size: .62rem;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  color: var(--green-dark);
-  margin-bottom: 8px;
-}
-.form-input, .form-textarea, .form-select {
-  width: 100%;
-  padding: 13px 16px;
-  background: white;
-  border: 1px solid rgba(88,89,88,.22);
-  border-radius: var(--radius-sm);
-  font-family: var(--ff-sans);
-  font-size: .95rem;
-  color: var(--green-dark);
-  outline: none;
-  transition: border-color .2s;
-}
-.form-input:focus, .form-textarea:focus, .form-select:focus { border-color: var(--gold); }
-.form-textarea { resize: vertical; min-height: 120px; }
-.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-
 /* ===== FOOTER ===== */
 .footer {
   background: var(--green-dark);
@@ -1226,7 +1202,6 @@ a { text-decoration: none; color: inherit; }
   .actividades__grid { grid-template-columns: 1fr 1fr; }
   .act-card--wide { grid-column: span 1; }
   .rango__grid { grid-template-columns: repeat(3, 1fr); }
-  .contacto__inner { grid-template-columns: 1fr; }
   .footer__top { grid-template-columns: 1fr 1fr; }
 
   .org-officers {

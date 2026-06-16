@@ -49,47 +49,6 @@ export default function Contacto() {
             </li>
           </ul>
         </div>
-
-        <div>
-          <form onSubmit={e => e.preventDefault()}>
-            <div className="form-grid">
-              <div className="form-group">
-                <label className="form-label">Nombre</label>
-                <input type="text" className="form-input" placeholder="Su nombre" />
-              </div>
-              <div className="form-group">
-                <label className="form-label">Apellido</label>
-                <input type="text" className="form-input" placeholder="Su apellido" />
-              </div>
-            </div>
-            <div className="form-group">
-              <label className="form-label">Correo Electrónico</label>
-              <input type="email" className="form-input" placeholder="correo@ejemplo.com" />
-            </div>
-            <div className="form-group">
-              <label className="form-label">Asunto</label>
-              <select className="form-select" defaultValue="">
-                <option value="" disabled>Seleccione un asunto</option>
-                <option>Solicitud de Ingreso</option>
-                <option>Información General</option>
-                <option>Actividades y Eventos</option>
-                <option>Prensa e Institucional</option>
-                <option>Otro</option>
-              </select>
-            </div>
-            <div className="form-group">
-              <label className="form-label">Mensaje</label>
-              <textarea className="form-textarea" placeholder="Escriba su mensaje aquí…" />
-            </div>
-            <button type="submit" className="btn btn-gold" style={{ width: '100%', justifyContent: 'center' }}>
-              Enviar Mensaje
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M22 2L11 13" />
-                <path d="M22 2L15 22l-4-9-9-4 20-7z" />
-              </svg>
-            </button>
-          </form>
-        </div>
       </div>
     </section>
   );
